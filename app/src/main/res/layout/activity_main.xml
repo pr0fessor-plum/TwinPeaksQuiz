@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/twin_peaks" />
+
+
+        <TextView
+            style="@style/heading"
+            android:text="Question #1:" />
+
+        <TextView
+            style="@style/question"
+            android:text="In what state is Twin Peaks located?" />
+
+        <RadioGroup
+            style="@style/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Montana"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/correct_answer_1_radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Washington"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Oregon"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Alaska"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/heading"
+            android:text="Question #2:" />
+
+
+        <TextView
+            style="@style/question"
+            android:text="What is the name of the casino/brothel owned by Benjamin Horne?" />
+
+
+        <RadioGroup
+            style="@style/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/correct_answer_2_radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="One Eyed Jacks"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Snake Eyes"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="The Lucky Lady"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="The Double-Ended Horseshoe"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/heading"
+            android:text="Question #3:" />
+
+
+        <TextView
+            style="@style/question"
+            android:text="What was Leo Johnson's profession before being shot and left brain-damaged?" />
+
+
+        <RadioGroup
+            style="@style/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Sheriff's Deputy"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Sawmill Operator"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/correct_answer_3_radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Truck Driver"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Pimp"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </RadioGroup>
+
+
+        <TextView
+            style="@style/heading"
+            android:text="Question #4:" />
+
+
+        <TextView
+            style="@style/question"
+            android:text="Who murdered Laura Palmer?" />
+
+
+        <RadioGroup
+            style="@style/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Benjamin Horne"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Leo Johnson"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Bobby Briggs"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/correct_answer_4_radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Killer Bob"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/heading"
+            android:text="Question #5:" />
+
+        <TextView
+            style="@style/question"
+            android:text="Actress Sheryl Lee played the role(s) of which character(s)?" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="72dp">
+
+            <CheckBox
+                android:id="@+id/correct_answer_5_checkbox_1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Laura Palmer"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+            <CheckBox
+                android:id="@+id/correct_answer_5_checkbox_2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Madeline Ferguson"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+            <CheckBox
+                android:id="@+id/incorrect_answer_5_checkbox_3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Shelly Johnson"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+            <CheckBox
+                android:id="@+id/incorrect_answer_5_checkbox_4"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Audrey Horne"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/heading"
+            android:text="Question #6:" />
+
+        <TextView
+            style="@style/question"
+            android:text="What is the name of the hotel in Twin Peaks?" />
+
+        <EditText
+            android:id="@+id/answer_6_field"
+            style="@style/answer"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Your answer here... "
+            android:inputType="textCapWords" />
+
+        <TextView
+            style="@style/heading"
+            android:text="Question #7:" />
+
+        <TextView
+            style="@style/question"
+            android:text="In Twin Peaks, Harry S. Truman is..." />
+
+        <RadioGroup
+            style="@style/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="The President of the United States"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="An FBI Special Agent"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/correct_answer_7_radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="The Sheriff of Twin Peaks"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="The Bellhop at The Great Northern Hotel"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RadioGroup>
+
+
+        <TextView
+            style="@style/heading"
+            android:text="Question #8:" />
+
+        <TextView
+            style="@style/question"
+            android:text="Which of the following actors/roles were nominated for an Emmy in 1990?" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="72dp">
+
+            <CheckBox
+                android:id="@+id/correct_answer_8_checkbox_1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Kyle MacLachlan as Special Agent Dale Cooper"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+            <CheckBox
+                android:id="@+id/correct_answer_8_checkbox_2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Piper Laurie as Catherine Martell"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+            <CheckBox
+                android:id="@+id/incorrect_answer_8_checkbox_3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Lara Flynn Boyle as Donna Hayward"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+            <CheckBox
+                android:id="@+id/correct_answer_8_checkbox_4"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Sherilyn Fenn as Audrey Horne"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/heading"
+            android:text="Question #9:" />
+
+        <TextView
+            style="@style/question"
+            android:text="Who inherited The Packard Saw Mill after Andrew Packard was believed to have been killed in a boating accident?" />
+
+        <RadioGroup
+            style="@style/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/correct_answer_9_radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="His wife, Jocelyn Packard"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="His sister, Catherine Martell"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="His business partner, Thomas Eckhardt"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="The Town of Twin Peaks"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/heading"
+            android:text="Question #10:" />
+
+        <TextView
+            style="@style/question"
+            android:text="Who is the owner of The Double R Diner in Twin Peaks?" />
+
+        <EditText
+            android:id="@+id/answer_10_field"
+            style="@style/answer"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Your answer here... "
+            android:inputType="textCapWords" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:onClick="submitAnswers"
+            android:text="Submit Answers" />
+
+    </LinearLayout>
+
+</ScrollView>
